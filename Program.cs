@@ -9,7 +9,6 @@ namespace quicksort_algorithm {
 
         public static int amount_printed_indices_swaps = 0;
         static void Main(string[] args) {
-            //take user input for quicksort algorithm
             Console.WriteLine("Enter the number of elements in the array");
             int n = Convert.ToInt32(Console.ReadLine());
             int[] arr = new int[n];
@@ -18,7 +17,6 @@ namespace quicksort_algorithm {
             {
                 arr[i] = Convert.ToInt32(Console.ReadLine());
             }
-            //call the quicksort function
             Quicksort(arr, 0, n - 1);
             Console.ReadLine();
         }
@@ -35,7 +33,6 @@ namespace quicksort_algorithm {
             }
         }
 
-        //partition function that will return the index of the pivot
         public static int Partition(int[] arr, int left, int right)
         {
             int pivot = arr[left];
@@ -59,7 +56,6 @@ namespace quicksort_algorithm {
             }
         }
 
-        //swap function that will swap the elements and print the indices of the elements swapped
         public static void Swap(int[] arr, int left, int right)
         {
             int temp = arr[left];
